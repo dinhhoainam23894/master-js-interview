@@ -1,21 +1,21 @@
 
 [Source](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0 "Permalink to Master the JavaScript Interview: What is Functional Programming?")
 
-# Bậc thầy về phỏng vấn Javascript : Lập trình chức năng là cái gì ?
+# Bậc thầy về phỏng vấn Javascript : Lập trình hướng chức năng là cái gì ?
 
 ![][1]
 
 Cấu trúc Synth - Orihaus (CC BY 2.0)
 
-> "Bậc thầy về phỏng vấn Javascript"" là  tuyển tập các bài đăng được thiết kế nên để dành cho các ứng cữ viên các câu hỏi thông thường mà họ sẽ gặp khi đạt đến trình độ từ cấp trung đến cấp cao về lĩnh vực Javascript. Đây là những câu hỏi mà tôi thường xuyên sử dụng trong phỏng vấn thực tế.
+> "Bậc thầy về phỏng vấn Javascript"" là  một loạt các bài đăng được thiết kế nên để dành cho các ứng cử viên các câu hỏi thông thường mà họ sẽ gặp khi đạt đến trình độ từ cấp trung đến cấp cao về lĩnh vực Javascript. Đây là những câu hỏi mà tôi thường xuyên sử dụng trong phỏng vấn thực tế.
 
 Lập trình chức năng đã trở thành chủ đề thực sự nóng trong thế giới Javascript. Ở thời điểm vài năm trước , một vài lập trình viên Javascript thậm chí còn không biết lập trình chức năng là gì , nhưng ở mức độ codebase ứng dụng lớn hơn tôi đã nhìn thấy 3 năm trước sự mạnh mẽ khi sử dụng các ý tưởng lập trình chức năng.
 
-** Lập trình chức năng** (viết tắt là FP) là quá trình xây dựng phần mềm bởi composing is the process of building software by composing ** functions gốc**, Tránh **các trạng thái được chia sẻ,** **dữ liệu có thể thay đổi**  và **side-effects**.Lập trình chức năng là **declarative** thay vì **imperative**, và các trạng thái ứng dụng đi qua các hàm chính.Trái ngược với lập trình hướng đối tượng , nơi mà các trạng thái ứng dụng thường xuyên được chia sẻ và  sắp đặt với các method trong đối tượng.
+** Lập trình chức năng** (viết tắt là FP) là quá trình xây dựng phần mềm bởi composing ** các hàm gốc**, Tránh **các trạng thái được chia sẻ,** **dữ liệu có thể thay đổi**  và **ảnh hưởng phụ**.Lập trình chức năng là **declarative** thay vì **imperative**, và các trạng thái ứng dụng đi qua các hàm chính.Trái ngược với lập trình hướng đối tượng , nơi mà các trạng thái ứng dụng thường xuyên được chia sẻ và  sắp đặt với các method trong đối tượng.
 
-Lập trình chức năng là một **mô hình lập trình**, có nghĩa nó là một cách suy nghĩ về xây dựng phần mềm dựa trên một số nguyên tắc cơ bản, xác định rõ (được liệt kê ở trên). Các ví dụ khác về mô hình lập trình bao gồm lập trình hướng đối tượng và lập trình thủ tục.
+Lập trình chức năng là một **mô hình lập trình**, có nghĩa nó là một cách suy nghĩ về xây dựng phần mềm dựa trên một số nguyên tắc cơ bản, xác định rõ (được liệt kê ở trên). Các ví dụ khác về mô hình lập trình bao gồm lập trình hướng đối tượng và lập trình hướng thủ tục.
 
-Code chức năng có xu hướng ngắn gọn hơn, dễ dự đoán hơn và dễ kiểm tra hơn code imperative hoặc đối tượng - nhưng nếu bạn không quen với nó và các mẫu phổ biến liên kết với nó, mcodechức năng cũng có thể dày đặc hơn và tài liệu liên quan có thể không thể hiểu được đối với người mới .
+Code chức năng có xu hướng ngắn gọn hơn, dễ dự đoán hơn và dễ kiểm tra hơn code imperative hoặc đối tượng - nhưng nếu bạn không quen với nó và các mẫu phổ biến liên kết với nó, code chức năng cũng có thể dày đặc hơn và tài liệu liên quan có thể không thể hiểu được đối với người mới .
 
 Nếu bạn bắt đầu tìm kiếm trên google các điều khoản lập trình chức năng, bạn sẽ nhanh chóng đâm đầu vào một bức tường có thể rất đáng sợ cho người mới bắt đầu. Để nói rằng nó có một cách học nhanh chóng thì đó là một lời nói dối. Nhưng nếu bạn đã lập trình JavaScript trong một thời gian, rất có thể bạn đã sử dụng rất nhiều khái niệm và tiện ích lập trình chức năng trong phần mềm thực tế của bạn.
 
@@ -40,9 +40,9 @@ Pure functions có nhiều thuộc tính quan trọng trong lập trình chức 
 
 **Function composition ** là quá trình kết hợp hai hoặc nhiều hàm để tạo ra một hàm mới hoặc thực hiện một số tính toán. Ví dụ, thành phần f. g (dấu chấm có nghĩa là "được tạo thành") tương đương với f (g (x)) trong JavaScript. Hiểu biết về thành phần hàm là một bước quan trọng hướng tới sự hiểu biết cách phần mềm được xây dựng bằng cách sử dụng lập trình chức năng. Đọc “Function composition là gì?” Để biết thêm.
 
-### Tránh trạng thái chia sẻ
+### Trạng thái được chia sẻ
 
-**Tránh trạng thái chia sẻ** là các biến, đối tượng hoặc không gian bộ nhớ nào tồn tại trong một scope chia sẻ hoặc là thuộc tính của một đối tượng được truyền giữa các scope. Một scope chia sẻ có thể bao gồm pope toàn cục hoặc phạm vi closure. Thông thường, trong lập trình hướng đối tượng, các đối tượng được chia sẻ giữa các scope bằng cách thêm các thuộc tính cho các đối tượng khác.
+**Trạng thái được chia sẻ** là các biến, đối tượng hoặc không gian bộ nhớ nào tồn tại trong một scope chia sẻ hoặc là thuộc tính của một đối tượng được truyền giữa các scope. Một scope chia sẻ có thể bao gồm pope toàn cục hoặc phạm vi closure. Thông thường, trong lập trình hướng đối tượng, các đối tượng được chia sẻ giữa các scope bằng cách thêm các thuộc tính cho các đối tượng khác.
 
 Ví dụ, một trò chơi máy tính có thể có một đối tượng trò chơi chính, với các nhân vật và các mục trò chơi được lưu trữ dưới dạng các thuộc tính thuộc sở hữu của đối tượng đó. Lập trình chức năng tránh trạng thái chia sẻ - thay vào đó dựa vào cấu trúc dữ liệu không thay đổi và tính toán thuần túy để lấy dữ liệu mới từ dữ liệu hiện có. Để biết thêm chi tiết về cách phần mềm chức năng có thể xử lý trạng thái ứng dụng, hãy xem “10 mẹo cho kiến ​​trúc Redux tốt hơn”.
 
@@ -56,7 +56,7 @@ Một vấn đề phổ biến khác liên quan đến share state là việc th
 
 Ví dụ về thời gian phụ thuộc
 
-Khi bạn tránh shared state , thời gian và thứ tự của các cuộc gọi hàm không thay đổi kết quả của việc gọi hàm. Với các pure functions,được cung cấp cùng một đầu vào, bạn sẽ luôn nhận được cùng một đầu ra. Điều này làm cho các cuộc gọi hàm hoàn toàn độc lập với các cuộc gọi hàm khác, có thể đơn giản hóa triệt để các thay đổi và tái cấu trúc. Thay đổi trong một chức năng hoặc thời gian của cuộc gọi chức năng sẽ không gợn sóng và phá vỡ các phần khác của chương trình.
+Khi bạn tránh shared state , thời gian và thứ tự của các lời gọi hàm không thay đổi kết quả của việc gọi hàm. Với các pure functions,được cung cấp cùng một đầu vào, bạn sẽ luôn nhận được cùng một đầu ra. Điều này làm cho các lời gọi hàm hoàn toàn độc lập với các cuộc gọi hàm khác, có thể đơn giản hóa triệt để các thay đổi và tái cấu trúc. Thay đổi trong một chức năng hoặc thời gian của cuộc gọi chức năng sẽ không gợn sóng và phá vỡ các phần khác của chương trình.
 
 Trong ví dụ trên, chúng ta sử dụng Object.assign () và truyền vào một đối tượng rỗng làm tham số đầu tiên để sao chép các thuộc tính của x thay vì thay đổi nó tại chỗ. Trong trường hợp này, nó sẽ tương đương với việc tạo một đối tượng mới ngay từ đầu, không có Object.assign (), nhưng đây là một mẫu phổ biến trong JavaScript để tạo ra các bản sao của trạng thái hiện tại thay vì sử dụng các đột biến.Ví dụ.
 
@@ -107,7 +107,7 @@ Side effects phần lớn được tránh trong lập trình hàm, điều này 
 
 Haskell và các ngôn ngữ chức năng khác thường xuyên cô lập và đóng gói các side-effect từ các pure functions bằng cách sử dụng monads. Chủ đề của các monads đủ sâu để viết một cuốn sách, vì vậy chúng tôi sẽ lưu lại cuốn sách đó sau này.
 
-Những gì bạn cần biết ngay bây giờ là các tside-effect cần phải được tách biệt với phần còn lại của phần mềm của bạn. Nếu bạn giữ các side-effect tách biệt với phần còn lại của logic chương trình, phần mềm của bạn sẽ dễ dàng hơn để mở rộng, tái cấu trúc, gỡ lỗi, kiểm tra và bảo trì.
+Những gì bạn cần biết ngay bây giờ là các side-effect cần phải được tách biệt với phần còn lại của phần mềm của bạn. Nếu bạn giữ các side-effect tách biệt với phần còn lại của logic chương trình, phần mềm của bạn sẽ dễ dàng hơn để mở rộng, tái cấu trúc, gỡ lỗi, kiểm tra và bảo trì.
 
 Đây là lý do mà hầu hết các frameworks front-end khuyến khích người dùng quản lý hiển thị trạng thái và thành phần trong các mô đun riêng lẻ, tách biệt nhau.
 
