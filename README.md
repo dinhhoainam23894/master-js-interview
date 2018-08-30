@@ -7,7 +7,7 @@
 
 Cấu trúc Synth - Orihaus (CC BY 2.0)
 
-> "Bậc thầy về phỏng vấn Javascript"" là  tuyển tập các bài đăng được thiết kế nên để dành cho các ứng cữ viên các câu hỏi thông thường mà họ sẽ gặp khi đạt đến trình độ từ cấp trung đến cấp cao về lĩnh vực Javascript. Đây là những câu hỏi mà tôi thường xuyên sử dụng trong phỏng vấn thực tế.
+> "Bậc thầy về phỏng vấn Javascript"" là  tuyển tập các bài đăng được thiết kế nên để dành cho các ứng cữ viên các câu hỏi thông thường mà họ sẽ gặp khi apply một vị trí ở trình độ từ cấp trung đến cấp cao về lĩnh vực Javascript. Đây là những câu hỏi mà tôi thường xuyên sử dụng trong phỏng vấn thực tế.
 
 Lập trình chức năng đã trở thành chủ đề thực sự nóng trong thế giới Javascript. Ở thời điểm vài năm trước , một vài lập trình viên Javascript thậm chí còn không biết lập trình chức năng là gì , nhưng ở mức độ codebase ứng dụng lớn hơn tôi đã nhìn thấy 3 năm trước sự mạnh mẽ khi sử dụng các ý tưởng lập trình chức năng.
 
@@ -20,8 +20,8 @@ Code chức năng có xu hướng ngắn gọn hơn, dễ dự đoán hơn và d
 Nếu bạn bắt đầu tìm kiếm trên google các điều khoản lập trình chức năng, bạn sẽ nhanh chóng đâm đầu vào một bức tường có thể rất đáng sợ cho người mới bắt đầu. Để nói rằng nó có một cách học nhanh chóng thì đó là một lời nói dối. Nhưng nếu bạn đã lập trình JavaScript trong một thời gian, rất có thể bạn đã sử dụng rất nhiều khái niệm và tiện ích lập trình chức năng trong phần mềm thực tế của bạn.
 
 
-> Đừng để tất cả những từ mới làm bạn sợ hãi. Nghe có vẻ dễ hơn rất nhiều.
-
+> Đừng để tất cả những từ mới làm bạn sợ hãi. Nó dễ hơn so với vẻ bề ngoài.
+os
 Phần khó nhất là tất cả các từ vựng không quen thuộc. Có rất nhiều ý tưởng trong định nghĩa tìm kiếm vô nghĩa ở trên mà tất cả mọi thứ cần phải được hiểu trước khi bạn có thể bắt đầu nắm bắt ý nghĩa của lập trình chức năng:
 
 * Pure functions
@@ -38,7 +38,7 @@ Nói cách khác, nếu bạn muốn biết những gì có nghĩa là lập tr�
 
 Pure functions có nhiều thuộc tính quan trọng trong lập trình chức năng, bao gồm **referential transparency** (bạn có thể thay thế một cuộc gọi hàm với giá trị kết quả của nó mà không thay đổi ý nghĩa của chương trình). Đọc “Pure functions là gì?” Để biết thêm chi tiết.
 
-**Function composition ** là quá trình kết hợp hai hoặc nhiều hàm để tạo ra một hàm mới hoặc thực hiện một số tính toán. Ví dụ, thành phần f. g (dấu chấm có nghĩa là "được tạo thành") tương đương với f (g (x)) trong JavaScript. Hiểu biết về thành phần hàm là một bước quan trọng hướng tới sự hiểu biết cách phần mềm được xây dựng bằng cách sử dụng lập trình chức năng. Đọc “Function composition là gì?” Để biết thêm.
+** Function composition ** là quá trình kết hợp hai hoặc nhiều hàm để tạo ra một hàm mới hoặc thực hiện một số tính toán. Ví dụ, thành phần f. g (dấu chấm có nghĩa là "được tạo thành") tương đương với f (g (x)) trong JavaScript. Hiểu biết về thành phần hàm là một bước quan trọng hướng tới sự hiểu biết cách phần mềm được xây dựng bằng cách sử dụng lập trình chức năng. Đọc “Function composition là gì?” Để biết thêm.
 
 ### Tránh trạng thái chia sẻ
 
@@ -60,7 +60,7 @@ Khi bạn tránh shared state , thời gian và thứ tự của các cuộc g�
 
 Trong ví dụ trên, chúng ta sử dụng Object.assign () và truyền vào một đối tượng rỗng làm tham số đầu tiên để sao chép các thuộc tính của x thay vì thay đổi nó tại chỗ. Trong trường hợp này, nó sẽ tương đương với việc tạo một đối tượng mới ngay từ đầu, không có Object.assign (), nhưng đây là một mẫu phổ biến trong JavaScript để tạo ra các bản sao của trạng thái hiện tại thay vì sử dụng các đột biến.Ví dụ.
 
-Nếu bạn nhìn kỹ vào các câu lệnh console.log () trong ví dụ này, bạn sẽ thấy một điều tôi đã đề cập: thành phần hàm.Nhắc lại phần trước , thành phần hàm trông giống như sau: f (g (x)). Trong trường hợp này, chúng ta thay thế f () và g () bằng x1 () và x2 () cho thành phần: x1. x2.
+Nếu bạn nhìn kỹ vào các câu lệnh console.log () trong ví dụ này, bạn sẽ thấy một điều tôi đã đề cập: hàm hợp.Nhắc lại phần trước , hàm hợp trông giống như sau: f (g (x)). Trong trường hợp này, chúng ta thay thế f () và g () bằng x1 () và x2 () cho thành phần: x1. x2.
 
 Tất nhiên, nếu bạn thay đổi thứ tự của bố cục, đầu ra sẽ thay đổi. Thứ tự của các hoạt động vẫn còn quan trọng. f (g (x)) không phải lúc nào cũng bằng g (f (x)), nhưng những gì không quan trọng nữa là những gì xảy ra với các biến bên ngoài hàm - và đó là một vấn đề lớn. Với hàm số không chuẩn chỉnh, bạn không thể hiểu đầy đủ chức năng của một hàm trừ khi bạn biết toàn bộ lịch sử của mọi biến mà hàm sử dụng hoặc ảnh hưởng.
 
